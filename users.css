@@ -181,13 +181,13 @@
   PLAYBACK BAR
   ---------------
   */
-/* progress bar moves smoothly */
+/* Smooth progress/Volume bar  */
 .x-progressBar-fillColor {
-  transition: transform 1s linear;
+  transition: 500ms;
 }
 
 .progress-bar__slider {
-  transition: left 1s linear;
+  transition: 500ms;
 }
 
 .playback-progressbar-isInteractive
@@ -426,6 +426,7 @@ input {
   border-radius: 4px;
   width: 6px;
   background-color: var(--spice-button-disabled);
+  background: var(--spice-button-active);
 }
 
 .os-theme-spotify.os-host-transition
@@ -704,15 +705,6 @@ a.x-heroCategoryCard-HeroCategoryCard {
   box-shadow: none;
 }
 
-/* Smooth progress/Volume bar  */
-.x-progressBar-fillColor {
-  transition: 500ms;
-}
-
-.progress-bar__slider {
-  transition: 500ms;
-}
-
 /* Thin library sidebar rows */
 .main-yourLibraryX-listItemGroup {
   grid-template-rows: none !important;
@@ -738,20 +730,4 @@ a.x-heroCategoryCard-HeroCategoryCard {
 }
 .main-yourLibraryX-listRowSubtitle {
   padding-top: 0px;
-}
-
-/* Modern scrollBar */
-.os-theme-spotify.os-host-transition
-  > .os-scrollbar-vertical
-  > .os-scrollbar-track
-  > .os-scrollbar-handle {
-  border-radius: 4px;
-  width: 6px;
-  background-color: var(--spice-button-disabled);
-  background: rgb(167, 24, 20);
-}
-.os-theme-spotify.os-host-transition
-  > .os-scrollbar-vertical
-  > .os-scrollbar-track {
-  width: 6px;
 }
